@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Register Form</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="register.css">
+
+</head>
+
+<body>
+    <div class="container_data">
+        <h1>Register</h1>
+        <p>Fill out this form</p>
+        <form action="#!" method="get" autocomplete="on">
+            <div class="name_group">
+                <div class="name_data">
+                    <input 
+                    type="text" 
+                    id="adi" 
+                    name="adi" 
+                    placeholder="First Name" 
+                    title="Adınızı Giriniz"
+                    required="true" 
+                    class="input_data" />
+                </div>
+                <div class="name_data">
+                    <input 
+                    type="text" 
+                    id="soyadi" 
+                    name="soyadi" 
+                    placeholder="Last Name" 
+                    title="Soyadınızı Giriniz"
+                    required="true" 
+                    class="input_data" />
+                </div>
+            </div>
+            <div class="form_data">
+                <i class="fa-regular fa-user icon_data"></i>
+                <input 
+                type="text" 
+                id="username" 
+                name="username" 
+                placeholder="Username"
+                title="Kullanıcı Adınızı Giriniz" 
+                required="true" 
+                class="input_data" />
+            </div>
+            <!-- mail -->
+            <div class="form_data">
+                <i class="fa-regular fa-envelope icon_data"></i>
+                <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="E-mail Address" 
+                title="Email Giriniz" 
+                required
+                class="input_data" />
+            </div>
+            <!-- şifre -->
+            <div class="form_data">
+                <i class="fa-solid fa-key icon_data"></i>
+                <input 
+                type="password" 
+                id="sifre" 
+                name="sifre" 
+                placeholder="Password" 
+                title="Şifrenizi Giriniz" 
+                required
+                class="input_data" />
+            </div>
+            <div style="color: black;">
+                <input type="checkbox" name="secim1" required> I agree with the Terms and Conditions and the Privacy Policy<br>
+            </div>
+            <!-- reset -->
+            <div class="form_data" id="button_group">
+                <button type="submit" id="submit" name="submit">Create Account</button>
+            </div>
+        </form>
+
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
