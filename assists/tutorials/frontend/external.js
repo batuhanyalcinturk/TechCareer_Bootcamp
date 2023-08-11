@@ -427,18 +427,23 @@ let tryCatchFunction = () => {
 const calculator = () => {
     let number = Number(prompt("1 ile 50 arasında bir bitiş sayısı giriniz"));
 
-    if(number === 44){
-        console.log("Çıkış..");
-        return;
-    }
-
+    
     let evenCount = 0;
     let oddCuont = 0;
     let evenSum = 0;
     let oddSum = 0;
 
     for (let i = 1; i < number; i++) {
-        if(i % 7 === 0){
+        if(number == 44){
+            console.log("Çıkış..");
+            break;
+        }
+        if(number > 50){
+            console.log("Çıkış..");
+            break;
+        }
+        if(i == 7){
+            console.log("7 geldi.. Toplamaya dahil etmiyorum");
             continue;
         }
         
@@ -449,20 +454,14 @@ const calculator = () => {
             oddCuont ++;
             oddSum+= i;
         }
-
-        if(i === 50){
-            console.log("50 limitine ulaşıldı");
-            break
-        }
     }
     
     console.log("Çift sayı adedi: ", evenCount);
     console.log("Çift sayıların toplamı: ", evenSum);
     console.log("Tek sayı adedi:",oddCuont );
     console.log("Tek sayıların toplamı:", oddSum );
-
 }
-calculator();
+//calculator();
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -477,8 +476,45 @@ calculator();
 /////////////////////////////////////////////
 // Dizi
 
+let arrTuto=()=>{
+    let arr =[5,3,1,2,6];
+    arr[5]=99;
+    console.log(arr);
+    console.log(arr[0]);
+    console.log(arr[arr.length-1]);
+}
+//arrTuto();
+
 /////////////////////////////////////////////
 // Object
+
+let objTuto = () => {
+    let obje={
+        "name" : "Batuhan",
+        "surname" : "Yalcinturk",
+        "fullName" : function(){
+            console.log(this.name+ " " + this.surname);
+        },
+        "java":{
+            "name":"JavaSE",
+            "version":21
+        }
+
+    };
+    console.log(obje.name.toUpperCase());
+    console.log(obje.fullName());
+    console.log(obje.java.version);
+    console.log(obje["java"]["version"]); //nested object
+
+    //Object Literal
+    obje.isLogin="true";
+    console.log(obje.isLogin);
+
+    const objectToString=JSON.stringify(obje);
+    const javaData=JSON.parse(objectToString).java.name;
+    console.log(javaData);
+}
+//objTuto();
 
 /////////////////////////////////////////////
 // callback, promise, asyn-await
