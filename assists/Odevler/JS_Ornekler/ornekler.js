@@ -1,9 +1,9 @@
 //Örnek-1
 // Kullanıcıdan aldığımız 2 sayıyı toplayan JS kodu yazınız ?
 
-let number=Number(prompt("Lütfen ilk sayıyı giriniz"));
+let n=Number(prompt("Lütfen ilk sayıyı giriniz"));
 let number2=Number(prompt("Lütfen ikinci sayıyı giriniz"));
-console.log("Girdiğiniz iki sayının toplamı = " + (number+number2));
+console.log("Girdiğiniz iki sayının toplamı = " + (n+number2));
 
 //Örnek-2
 /*
@@ -12,7 +12,8 @@ Formül: (derece*9/5)+32
 */
 
 let number3=Number(prompt("Lütfen Fahrenheit'a dönüştürülecek sayıyı giriniz"));
-console.log(((number3*(9/5))+32)+" derece Fahrenheit");
+//console.log(((number3*(9/5))+32)+" derece Fahrenheit");
+console.log(`${((number3*(9/5))+32)} derece Fahrenheit`);
 
 //Örnek-3
 // y=3x+4k ==>1.dereceden 2 bilinmeyenli denklem algoritması
@@ -98,3 +99,20 @@ if (password === repassword) {
 } else {
     console.log("Girilen şifreler birbirine uymuyor.");
 }
+
+
+// ÖDEV NOT:5 adımı beraber yapalım
+// kullanıcı tarafından girilen bir kelimenin (prompt)
+//let userData= prompt("Lütfen bir şeyler yazınız")  ;
+// S-1) Kaç karakterlidir ? (length)
+// S-2) boşluklar alınarak Kaç karakterlidir ? (trim)
+// S-3) bütün kelimeyi küçük harfle göstermek ? (toLowerCase())
+// S-4) bütün kelimeyi büyük harfle göstermek ? (toUpperCase())
+// S-5) Kullanıcıdan alınan ilk kelimeyle , "javascript" kelimeyle değiştirin. (replace, substring, indexOf)
+// console.log(userData.replace("xxxxxxx"),"javascript");
+// console.log(userData.replace(userData.substring(0,userData.indexOf(" ")),"javascript"));
+// S-6) yazdığınız kelimede "javascript ile mi başlıyor" ? (startsWith()) 
+// S-7) yazdığınız kelimede "javascript ile mi bitiyor" ? (endsWith())
+// S-8) ilk harf nedir  ? (charAt())
+// S-9) girdiğiniz kelimenin sonuna "-ben js öğreniyorum" (concat())
+// S-10) girdiğiniz 0 ile 4 arasındaki indexi ekranda gösterin? (subString())
